@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222228;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15%;
+  background-color: #282830;
+  box-shadow: 5px 5px 7px 2px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  height: 220px;
+}
+
+.nav-images-grid {
+  display: grid;
+}
+
+.nav-img-1 {
+  grid-row: 1;
+  grid-column: 1;
+  background-image: url(homePageImages/tvswish.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 118px;
+  height: 118px;
+  border-radius: 20%;
+}
+
+.nav-img-2 {
+  grid-row: 1;
+  grid-column: 1;
+  background-image: url(homePageImages/99--9-9.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  border-radius: 20%;
+  transition: all 1s;
+}
+
+.nav-img-2:hover {
+  transform: translate(+35px, +25px);
+}
+
+.nav-img:hover {
+  cursor: pointer;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #eeeeee;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+  padding-top: 5px;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  color: #bbbbbb;
+}
+
+.nav-links-container {
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.games-bar {
+  /* background-color: red; */
+  margin-top: 3%;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  /* width: 100%; */
+}
+
+.game {
+  width: 100%;
+  height: 100%;
+}
+
+.game-1 {
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-1-img {
+  height: 450px;
+  width: 400px;
+  background-image: url(homePageImages/guessMyNumber.png);
+  background-color: #222222;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  box-shadow: 3px 1px 4px 3px;
+  border: 0px solid black;
+  transition: all 0.2s;
+}
+
+.game-1-img:hover {
+  box-shadow: none;
+  border: 3px solid #222222;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.game-2 {
+  background-color: #a23152;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-2-img {
+  height: 450px;
+  width: 400px;
+  background-image: url(homePageImages/pigGame.png);
+  background-color: #9d3157;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  box-shadow: 1px 3px 3px 4px;
+  border: 0px solid black;
+  transition: all 0.2s;
+}
+
+.game-2-img:hover {
+  box-shadow: none;
+  border: 3px solid #9d3157;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.game-3 {
+  background-color: #011f3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-3-img {
+  height: 450px;
+  width: 400px;
+  background-image: url(homePageImages/simonGame.png);
+  background-color: #011f3f;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  box-shadow: 3px 1px 4px 3px;
+  border: 0px solid black;
+  transition: all 0.2s;
+}
+
+.game-3-img:hover {
+  box-shadow: none;
+  border: 3px solid #011f3f;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.game-4 {
+  background-color: #283149;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-4-img {
+  height: 450px;
+  width: 400px;
+  background-image: url(homePageImages/drumKit.png);
+  background-color: #283149;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  box-shadow: 3px 1px 4px 3px;
+  border: 0px solid black;
+  transition: all 0.2s;
+}
+
+.game-4-img:hover {
+  box-shadow: none;
+  border: 3px solid #283149;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #bbbbbb;
+  font-weight: bold;
+  margin-top: 150px;
+}
+
+.footer-name {
+  color: white;
+  background-color: black;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 980px) {
+  .nav-link {
+    display: none;
+  }
+  .games-bar {
+    grid-template-columns: 1fr;
+    height: 100%;
+    overflow: hidden;
+  }
+}
